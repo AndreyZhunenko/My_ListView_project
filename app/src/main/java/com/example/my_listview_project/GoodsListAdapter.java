@@ -42,7 +42,7 @@ public class GoodsListAdapter extends BaseAdapter {
 
         productName.setText(tovar.name);
         productPNT.setText(tovar.PNT);
-        productPrice.setText(tovar.price);
+        productPrice.setText(Integer.toString(tovar.price));
 
         switch (tovar.PNT){
             case "100001": productImage.setImageResource(R.drawable.knife); break;
